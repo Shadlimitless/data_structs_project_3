@@ -6,6 +6,19 @@ def sort_012(input_list):
     Args:
        input_list(list): List to be sorted
     """
+    # Loop through the array and check the current and next element
+    idx = 0
+    while idx < len(input_list) - 1:
+        # check if next element is greater
+        if input_list[idx] > input_list[idx + 1]:
+            temp = input_list[idx]
+            input_list[idx] = input_list[idx + 1]
+            input_list[idx + 1] = temp
+
+            # Go back and check from previous value again
+            idx = -1
+        idx += 1
+    return input_list
     pass
 
 def test_function(test_case):
