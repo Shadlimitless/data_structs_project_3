@@ -7,6 +7,8 @@ def sort_012(input_list):
        input_list(list): List to be sorted
     """
     # Loop through the array and check the current and next element
+    if len(input_list) == 0:
+        return []
     idx = 0
     while idx < len(input_list) - 1:
         # check if next element is greater
@@ -32,3 +34,4 @@ def test_function(test_case):
 test_function([0, 0, 2, 2, 2, 1, 1, 1, 2, 0, 2])
 test_function([2, 1, 2, 0, 0, 2, 1, 0, 1, 0, 0, 2, 2, 2, 1, 2, 0, 0, 0, 2, 1, 0, 2, 0, 0, 1])
 test_function([0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2])
+test_function([])

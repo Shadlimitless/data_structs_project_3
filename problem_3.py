@@ -7,6 +7,8 @@ def rearrange_digits(input_list):
     Returns:
        (int),(int): Two maximum sums
     """
+    if len(input_list) == 0:
+        return []
     # Start by sorting the array in descending order using merge sort algorithm
     sorted = sort(input_list)
     # Once sorted, add elements in odd indices of the sorted list to find first max number

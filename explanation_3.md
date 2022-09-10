@@ -1,0 +1,2 @@
+I am using a combination of merge sort algorithm here to solve the problem. First I sort the array from mim to max values, split the array into two and start comparing the elements in both arrays against each other, adding the larger one first to the result(merged) array.
+Efficiency of merge sort algorithm is O(nlog(n)). It has a space complexity of O(n) as we have to create a new data structure to hold the results of the merge
