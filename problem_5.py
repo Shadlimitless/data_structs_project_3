@@ -72,7 +72,6 @@ class Trie:
         current_node =  self.root
         if prefix[0] not in current_node.children or not self.root.children:
             return 'did not find the prefix nodes'
-        returnVal = {}
         for char in prefix:
 #             print(current_node)
             if char in current_node.children:
